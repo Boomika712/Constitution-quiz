@@ -1,3 +1,4 @@
+
 import { useBoundStore } from '@/store/useBoundStore'
 
 export default function QuestionsNavbar ({ changueCurrent }) {

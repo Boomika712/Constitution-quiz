@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -87,15 +88,15 @@ export default function GameOver () {
 	}
 
 	function finalTitle () {
-		if (queries.infinitymode) return 'बधाई हो!'
-		if (win === true) return 'आप जीत गए!'
-		return 'आप हार गए!'
+		if (queries.infinitymode) return 'Congratulations!'
+		if (win === true) return 'You Win!'
+		return 'You Lose!'
 	}
 
 	function finalText () {
-		if (queries.infinitymode) return `आपने ${score} प्रश्न सही उत्तर दिए!`
-		if (win === true) return 'बधाई हो! \nक्विज सफलतापूर्वक समाप्त हुआ।'
-		return 'अच्छा प्रयास! \nआप फिर से प्रयास कर सकते हैं।'
+		if (queries.infinitymode) return `You answered well ${score} questions!`
+		if (win === true) return 'Congratulations! \nQuiz completed successfully.'
+		return 'Better luck next time! \nYou can try again.'
 	}
 
 	return (
@@ -118,10 +119,10 @@ export default function GameOver () {
 					<div className='flex gap-6 items-center'>
 						<Link href="/" className='px-5 md:px-10 hover:opacity-75 bg-slate-200 py-3 rounded-md transition-colors'>
 							<BiArrowBack color='#0f172a' className='text-xl mr-1 inline-block' title='' />
-							वापस जाएं
+							Go back
 						</Link>
 						<button onClick={() => document.getElementById('newGameDialog').showModal()} className='btn-primary px-5 md:px-10 py-3 uppercase tracking-widest rounded-md bg-blue-500 text-white'>
-							{queries.infinitymode || win !== false ? 'फिर से खेलें' : 'फिर से प्रयास करें'}
+							{queries.infinitymode || win !== false ? 'Play Again' : 'Try Again'}
 						</button>
 					</div>
 				</div>
@@ -129,3 +130,4 @@ export default function GameOver () {
 		</>
 	)
 }
+

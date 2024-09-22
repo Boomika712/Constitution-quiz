@@ -1,3 +1,4 @@
+
 import categories from '@/assets/categories.json'
 import Image from 'next/image'
 

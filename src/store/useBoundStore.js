@@ -1,3 +1,4 @@
+
 import { create } from 'zustand'
 import { useWildcardsStore } from './useWildcards'
 import { useQueriesStore } from './useQueries'
@@ -8,3 +9,4 @@ export const useBoundStore = create((...a) => ({
 	...useQueriesStore(...a),
 	...useQuestionsStore(...a)
 }))
+

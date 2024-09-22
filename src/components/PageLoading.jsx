@@ -1,3 +1,4 @@
+
 export default function PageLoading () {
 	return (
 		<div className="text-slate-900 bg-cover bg-center bg-no-repeat bg-[url('/bg-home.svg')] px-6 py-4 text-2xl flex items-center justify-center absolute top-0 left-0 w-screen h-screen cursor-progress">
@@ -10,3 +11,4 @@ export default function PageLoading () {
 		</div>
 	)
 }
+

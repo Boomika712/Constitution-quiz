@@ -1,3 +1,4 @@
+
 import offlineQuestions from '@/assets/questions.json'
 const cohere = require('cohere-ai')
 cohere.init(process.env.COHERE_API_KEY)
@@ -70,3 +71,4 @@ export default function handler (req, res) {
 			return res.status(500).json({ message, statusCode })
 		})
 }
+

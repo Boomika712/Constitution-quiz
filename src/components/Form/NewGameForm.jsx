@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 
@@ -81,8 +82,9 @@ export default function NewGameForm () {
 					<JsxForm handleInputs={handleInputs} nowQueries={nowQueries} />
 				</div>
 
-				<button type='submit' className='btn-primary uppercase py-3 px-6 w-full tracking-widest' onClick={(e) => handleSubmit(e)}>नया खेल</button>
+				<button type='submit' className='btn-primary uppercase py-3 px-6 w-full tracking-widest' onClick={(e) => handleSubmit(e)}>New game</button>
 			</form>
 		</dialog >
 	)
 }
+

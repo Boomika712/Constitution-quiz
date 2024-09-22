@@ -1,10 +1,11 @@
+
 import categories from '@/assets/categories.json'
 import { ImInfinite } from 'react-icons/im'
 import { BiTimeFive } from 'react-icons/bi'
 import { TbDeviceGamepad2 } from 'react-icons/tb'
 import Image from 'next/image'
 import PageFooter from '../PageFooter'
-import playSound from '@/helpers/playSound' 
+import playSound from '@/helpers/playSound'
 
 export default function MainHome () {
   function handleTitleHover (e) {
@@ -23,7 +24,7 @@ export default function MainHome () {
   return (
     <main className='min-h-screen flex flex-col'>
       {/* Main Heading and Play Button */}
-      <section className='flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat h-screen text-center text-white relative' style={{ backgroundImage: 'url("/bg-home.svg")' }}>
+      <section className='flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat h-screen text-center text-white relative' style={{ backgroundImage: 'url("../bg-home.svg")' }}>
         <article className='relative z-10'>
           <h1 className='text-8xl font-medium w-full uppercase' translate='no'>
             {'QuizWhiz'.split('').map((letter, index) => (
@@ -33,15 +34,15 @@ export default function MainHome () {
             ))}
           </h1>
           <p className='mb-20'>
-            विधानमंडल प्रश्नोत्तरी खेलें!
+            Play Legislature Quiz!
           </p>
           <button onClick={handlePlay} id='play' className='btn-primary uppercase px-6 py-4 text-lg max-w-md w-full mx-auto mt-10'>
-            खेलें
+            Play
           </button>
-
         </article>
       </section>
       <PageFooter />
     </main>
   )
 }
+

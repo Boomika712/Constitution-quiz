@@ -1,3 +1,4 @@
+
 const defaultWildCards = { skip: 1, half: 1, lives: 3 }
 
 export const useWildcardsStore = (set, get) => ({
@@ -27,3 +28,4 @@ export const useWildcardsStore = (set, get) => ({
 	useLivesCard: () => set(state => ({ wildCards: { ...state.wildCards, lives: state.wildCards.lives - 1 } })),
 	cleanWildCards: () => set({ wildCards: defaultWildCards })
 })
+

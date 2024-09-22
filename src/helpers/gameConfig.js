@@ -1,3 +1,4 @@
+
 import categoriesJSON from '@/assets/categories.json'
 
 const MAX_QUESTIONS = 10
@@ -56,3 +57,4 @@ export const defaultQuery = {
 	timemode: TIME_MODE,
 	categories: categoriesJSON.map(category => category.id)
 }
+

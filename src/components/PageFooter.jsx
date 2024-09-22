@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import playSound from '@/helpers/playSound'
 import soundOn from '../assets/sound-on.svg'
@@ -48,3 +49,4 @@ export default function Footer ({ alert = false }) {
 		</footer>
 	)
 }
+

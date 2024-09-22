@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import { BsSkipEndFill } from 'react-icons/bs'
 import fiftyImg from '@/assets/fifty.svg'
@@ -51,3 +52,4 @@ export default function Wildcards () {
 		</aside>
 	)
 }
+

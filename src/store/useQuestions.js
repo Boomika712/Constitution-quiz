@@ -1,3 +1,4 @@
+
 import getQuestions from '@/helpers/getQuestions'
 
 export const useQuestionsStore = (set, get) => ({
@@ -28,3 +29,4 @@ export const useQuestionsStore = (set, get) => ({
 	setScore: (score) => set({ score }),
 	setWin: (win) => set({ win })
 })
+
